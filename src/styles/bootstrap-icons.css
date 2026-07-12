@@ -1,112 +1,114 @@
 @font-face {
-    font-display: block;
-    font-family: "bootstrap-icons";
-    src: url("../../node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2") format("woff2"),
-        url("../../node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff") format("woff");
+  font-display: block;
+  font-family: "bootstrap-icons";
+  src:
+    url("../../node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2")
+      format("woff2"),
+    url("../../node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff")
+      format("woff");
 }
 
 [class*="icon"]::before {
-    display: inline-block;
-    font-family: bootstrap-icons !important;
-    font-style: normal;
-    font-weight: normal !important;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    vertical-align: -.125em;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -0.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .icon.list::before {
-    content: "\F479";
+  content: "\F479";
 }
 
 .icon.person::before {
-    content: "\F4E1";
+  content: "\F4E1";
 }
 
 .icon.image::before {
-    content: "\F42A";
+  content: "\F42A";
 }
 
 .icon.bar-chart::before {
-    content: "\F17E";
+  content: "\F17E";
 }
 
 .icon.globe::before {
-    content: "\F3EE";
+  content: "\F3EE";
 }
 
 .icon.pencil-square::before {
-    content: "\F4CA";
+  content: "\F4CA";
 }
 
 .icon.journal-text::before {
-    content: "\F444";
+  content: "\F444";
 }
 
 .icon.question-circle::before {
-    content: "\F505";
+  content: "\F505";
 }
 
 .icon.envelope::before {
-    content: "\F32C";
+  content: "\F32C";
 }
 
 .icon.palette::before {
-    content: "\F4B0";
+  content: "\F4B0";
 }
 
 .icon.person-badge::before {
-    content: "\F4D3";
+  content: "\F4D3";
 }
 
 .icon.collection::before {
-    content: "\F2CC";
+  content: "\F2CC";
 }
 
 .icon.globe2::before {
-    content: "\F3EF";
+  content: "\F3EF";
 }
 
 .icon.link-45deg::before {
-    content: "\F470";
+  content: "\F470";
 }
 
 .icon.instagram::before {
-    content: "\F437";
+  content: "\F437";
 }
 
 .icon.tiktok::before {
-    content: "\F6CC";
+  content: "\F6CC";
 }
 
 .icon.twitch::before {
-    content: "\F5EE";
+  content: "\F5EE";
 }
 
 .icon.bag::before {
-    content: "\F174";
+  content: "\F174";
 }
 
 .icon.discord::before {
-    content: "\F300";
+  content: "\F300";
 }
 
 .icon.cash-stack::before {
-    content: "\F246";
+  content: "\F246";
 }
 
-
 .icon.send::before {
-    content: "\F6C0";
+  content: "\F6C0";
 }
 
 .icon.c-circle::before {
-    content: "\F7DB";
+  content: "\F7DB";
 }
 
 .icon.house::before {
-    content: "\F422";
+  content: "\F422";
 }

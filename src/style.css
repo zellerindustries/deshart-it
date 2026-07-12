@@ -22,3 +22,5 @@
 
 /* 5. Overrides & Responsiveness */
 @import url("styles/responsive.css");
+
+@import url("styles/404.css");
