@@ -14,5 +14,8 @@
   "devDependencies": {
     "prettier": "^3.9.5",
     "serve": "^14.2.6"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
   }
 }

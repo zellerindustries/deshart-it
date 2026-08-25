@@ -1,68 +1,71 @@
 name: Deploy
-
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
-
 permissions:
   contents: read
-
 concurrency:
   group: production
   cancel-in-progress: true
-
 jobs:
-  build-and-deploy:
-    name: Build and Deploy
+  build:
+    name: Build
     runs-on: ubuntu-latest
-    timeout-minutes: 15
-
+    timeout-minutes: 10
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 1
-
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "lts/*"
           cache: npm
-
       - name: Install dependencies
         run: |
           set -euo pipefail
           npm ci --omit=dev
-
       - name: Build project
         run: |
           set -euo pipefail
           npm run build
-
       - name: Verify build output
         run: |
           set -euo pipefail
-
           test -d dist
           test -f dist/index.html
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: dist
+          path: dist/
+          retention-days: 1
 
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v8
+        with:
+          name: dist
+          path: dist
       - name: Setup SSH
         run: |
           set -euo pipefail
-
           install -m 700 -d ~/.ssh
-
           printf '%s\n' "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
-
           printf '%s\n' "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
           chmod 644 ~/.ssh/known_hosts
-
       - name: Deploy
         run: |
           set -euo pipefail
-
           rsync -az --delete \
             -e "ssh -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes" \
             dist/ \

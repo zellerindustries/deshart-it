@@ -1,18 +1,6 @@
 /* ==========================================
    LAYOUT & HERO
 ========================================== */
-.grid {
-    display: grid;
-    gap: var(--spacing-md);
-}
-
-/* Fix: Default to 1 col, use utility classes for more */
-.grid-2-cols-mobile {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-md);
-}
-
 /* FLEX UTILITIES */
 .flex {
     display: flex;
@@ -48,7 +36,6 @@
 
 .hero img {
     width: clamp(120px, 20vw, 240px);
-    max-width: 200px;
     height: auto;
     flex-shrink: 0;
 }

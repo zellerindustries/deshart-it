@@ -15,14 +15,6 @@
     background-color: var(--color-bg-alt);
 }
 
-#site-header .logo-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--spacing-sm);
-    padding: var(--spacing-md);
-}
-
 #site-header nav {
     margin: 0 var(--spacing-inline);
     display: flex;

@@ -1,20 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--security-->
 
-    <title>Contact Desh_Art | Fabio Lione - Digital Illustrator & Concept Artist</title>
+    <title>Contatta Desh_Art | Fabio Lione - Illustratore Digitale & Concept Artist</title>
 
 
-    <meta name="description" content="Contact Fabio Lione (Desh_Art) for commissions, collaborations, or inquiries.">
+    <meta name="description" content="Contatta Fabio Lione (Desh_Art) per commissioni, collaborazioni o informazioni.">
     <meta name="author" content="Fabio Lione (Desh_Art)">
+    <meta name="keywords"
+        content="Contatti, Commissioni, Illustrazione Digitale, Character Design, Fabio Lione, Desh_Art">
+    <link rel="canonical" href="https://deshart.it/form.html">
 
     <!-- ========== FAVICONS & TOUCH ICONS ========== -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- ========== THEME & SEO ========== -->
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0b0f1a">
+
+    <!-- ========== SOCIAL SHARING / OPEN GRAPH ========== -->
+    <meta property="og:title" content="Contatta Desh_Art | Fabio Lione">
+    <meta property="og:description"
+        content="Contatta Fabio Lione (Desh_Art) per commissioni, collaborazioni o informazioni.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://deshart.it/form.html">
+    <meta property="og:image" content="/assets/pfpic.jpg">
+    <meta property="og:site_name" content="Desh_Art">
+    <meta property="og:locale" content="it_IT">
+
+    <!-- ========== TWITTER CARDS ========== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contatta Desh_Art | Fabio Lione">
+    <meta name="twitter:description"
+        content="Contatta Fabio Lione (Desh_Art) per commissioni, collaborazioni o informazioni.">
+    <meta name="twitter:image" content="/assets/pfpic.jpg">
+    <meta name="twitter:site" content="@desh_art_">
+    <meta name="twitter:creator" content="@desh_art_">
+
+    <!-- ========== SCHEMA (JSON-LD) ========== -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Fabio Lione",
+    "alternateName": "Desh_Art",
+    "url": "https://deshart.it/",
+    "image": "https://deshart.it/assets/pfpic.jpg",
+    "description": "Illustratore digitale freelance e concept artist specializzato in character design e illustrazione fantasy per DnD, GdR e progetti narrativi.",
+    "jobTitle": "Illustratore Digitale & Concept Artist",
+    "sameAs": [
+      "https://www.artstation.com/desh_artist",
+      "https://www.instagram.com/desh_art_/",
+      "https://www.tiktok.com/@desh_art",
+      "https://www.twitch.tv/desh_art_",
+      "https://store.deshart.it"
+    ]
+  }
+  </script>
 
     <link rel="stylesheet" href="/style.css">
 
@@ -24,51 +71,51 @@
 <body>
     <main>
         <section aria-labelledby="contact-heading" class="max-width">
-            <h1 id="contact-heading">Contact Desh_Art</h1>
-            <p>Use this form to request a commission, collaboration, or ask questions.</p>
+            <h1 id="contact-heading">Contatta Desh_Art</h1>
+            <p>Usa questo modulo per richiedere una commissione, proporre una collaborazione o fare domande.</p>
 
-            <form id="contact-form" method="post" action="#" aria-label="Contact Form">
+            <form id="contact-form" method="post" action="#" aria-label="Modulo di Contatto">
                 <fieldset>
-                    <legend>Personal Information</legend>
+                    <legend>Informazioni Personali</legend>
 
                     <div>
-                        <label for="name">Full Name <span aria-hidden="true">*</span></label>
+                        <label for="name">Nome Completo <span aria-hidden="true">*</span></label>
                         <input type="text" id="name" name="name" required autocomplete="name" minlength="2"
-                            maxlength="70" pattern="^[a-zA-ZÀ-ÿ\s.'-]+$" title="Please use letters only"
-                            placeholder="Your full name">
+                            maxlength="70" pattern="^[a-zA-ZÀ-ÿ\s.'-]+$" title="Utilizza solo lettere"
+                            placeholder="Il tuo nome completo">
                     </div>
 
                     <div>
-                        <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                        <label for="email">Indirizzo Email <span aria-hidden="true">*</span></label>
                         <input type="email" id="email" name="email" required autocomplete="email"
-                            placeholder="you@example.com">
+                            placeholder="tu@esempio.com">
                     </div>
                 </fieldset>
 
                 <fieldset>
-                    <legend>Message</legend>
+                    <legend>Messaggio</legend>
                     <div>
-                        <label for="message">Message <span aria-hidden="true">*</span></label>
+                        <label for="message">Messaggio <span aria-hidden="true">*</span></label>
                         <textarea id="message" name="message" rows="5" required minlength="10" maxlength="5000"
-                            placeholder="Describe your request..."></textarea>
+                            placeholder="Descrivi la tua richiesta..."></textarea>
                     </div>
                 </fieldset>
 
                 <div class="hidden-field" aria-hidden="true">
-                    <label for="bot-field">Do not fill this out if you are human:</label>
+                    <label for="bot-field">Non compilare questo campo se sei un umano:</label>
                     <input type="text" id="bot-field" name="bot-field" tabindex="-1" autocomplete="off">
                 </div>
 
-                <button type="submit" id="submit-btn">Send Message</button>
+                <button type="submit" id="submit-btn">Invia Messaggio</button>
 
                 <div id="form-status" aria-live="polite"></div>
             </form>
             <div id="form-success" hidden>
-                <h2>Message Sent</h2>
-                <p>Thanks for reaching out. Fabio will get back to you soon.</p>
+                <h2>Messaggio Inviato</h2>
+                <p>Grazie per averci contattato. Fabio ti risponderà al più presto.</p>
 
                 <a href="/" class="btn btn-cta">
-                    Back to portfolio
+                    Torna al portfolio
                 </a>
             </div>
         </section>

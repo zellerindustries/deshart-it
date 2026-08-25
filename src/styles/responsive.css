@@ -54,11 +54,6 @@
         /* Stack cards to 1 column */
     }
 
-    /* Grid Utility */
-    .grid-2-cols-mobile {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     #portfolio ul {
         grid-template-columns: 1fr;
     }
@@ -101,12 +96,6 @@
         text-align: center;
     }
 
-    .bottom-bar {
-        flex-direction: column;
-        padding: var(--spacing-md);
-        height: auto;
-    }
-
     .flip-card-inner {
         padding-top: 150%;
     }
@@ -117,21 +106,5 @@
 
     #faq dd {
         font-size: var(--font-size-xs);
-    }
-
-    .bottom-bar a span {
-        display: none;
-        /* Icon-only */
-    }
-
-    .bottom-bar {
-        height: 60px;
-    }
-}
-
-/* Specific fix for variable-based breakpoint */
-@media (max-width: var(--breakpoint-sm)) {
-    .bottom-bar a i {
-        font-size: 1.25rem;
     }
 }

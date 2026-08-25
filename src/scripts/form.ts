@@ -56,7 +56,17 @@ export function initForm(): void {
     /**
      * Helpers
      */
-    const hasSubmitted = () => localStorage.getItem(CONFIG.SUCCESS_KEY) === 'true';
+    const hasSubmitted = () => {
+        const submittedAt = localStorage.getItem(CONFIG.SUCCESS_KEY);
+        if (!submittedAt) return false;
+
+        if (Date.now() - +submittedAt > CONFIG.LOCK_DURATION_MS) {
+            localStorage.removeItem(CONFIG.SUCCESS_KEY);
+            return false;
+        }
+
+        return true;
+    };
 
     /**
      * Character Counter
@@ -74,21 +84,21 @@ export function initForm(): void {
     const validators = {
         name: (v: string) =>
             v.length < 2
-                ? "Name is too short."
+                ? "Il nome è troppo corto."
                 : !/^[\p{L}\s.'-]+$/u.test(v)
-                    ? "Invalid characters in name."
+                    ? "Caratteri non validi nel nome."
                     : "",
         email: (v: string) =>
             !v
-                ? "Email is required."
+                ? "L'email è obbligatoria."
                 : !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)
-                    ? "Invalid email."
+                    ? "Email non valida."
                     : "",
         message: (v: string) =>
             v.length < 10
-                ? "Message is too short."
+                ? "Il messaggio è troppo corto."
                 : v.length > CONFIG.MAX_MESSAGE_LENGTH
-                    ? "Message too long."
+                    ? "Il messaggio è troppo lungo."
                     : ""
     };
 
@@ -226,7 +236,7 @@ export function initForm(): void {
      * Fake success (bot protection)
      */
     const fakeSuccess = () => {
-        localStorage.setItem(CONFIG.SUCCESS_KEY, 'true');
+        localStorage.setItem(CONFIG.SUCCESS_KEY, Date.now().toString());
         showSuccessUI();
     };
 
@@ -253,12 +263,12 @@ export function initForm(): void {
         }
 
         if (!validateFormUI()) {
-            updateStatus("Fix errors before submitting.", "error");
+            updateStatus("Correggi gli errori prima di inviare.", "error");
             return;
         }
 
         if (getRemainingLockTime() > 0) {
-            updateStatus("Please wait before sending again.", "error");
+            updateStatus("Attendi prima di inviare di nuovo.", "error");
             return;
         }
 
@@ -272,7 +282,7 @@ export function initForm(): void {
 
         const originalText = submitButton.textContent || '';
 
-        updateStatus("Sending...", "success");
+        updateStatus("Invio in corso...", "success");
         submitButton.disabled = true;
         submitButton.classList.add('loading');
 
@@ -289,14 +299,14 @@ export function initForm(): void {
             if (!res.ok) throw new Error();
 
             localStorage.setItem(CONFIG.LOCK_KEY, Date.now().toString());
-            localStorage.setItem(CONFIG.SUCCESS_KEY, 'true');
+            localStorage.setItem(CONFIG.SUCCESS_KEY, Date.now().toString());
 
             resetFormUI();
             showSuccessUI();
             formLoadTime = Date.now();
 
         } catch {
-            updateStatus("Failed to send. Try again.", "error");
+            updateStatus("Invio non riuscito. Riprova.", "error");
         } finally {
             if (!hasSubmitted()) {
                 submitButton.disabled = false;
