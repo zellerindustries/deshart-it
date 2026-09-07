@@ -1,7 +1,7 @@
-name: "✨ Feature Request"
-description: "Suggest a new feature or improvement for a project."
-title: "[FEATURE] "
-labels: ["enhancement"]
+name: '✨ Feature Request'
+description: 'Suggest a new feature or improvement for a project.'
+title: '[FEATURE] '
+labels: ['enhancement']
 assignees: []
 
 body:
@@ -15,7 +15,7 @@ body:
     attributes:
       label: Motivation / Use Case
       description: Why is this feature needed?
-      placeholder: "This feature is useful because ..."
+      placeholder: 'This feature is useful because ...'
       required: true
 
   - type: input
@@ -23,7 +23,7 @@ body:
     attributes:
       label: Proposed Solution
       description: If you have ideas on implementation, describe them
-      placeholder: "Consider adding a new endpoint / UI element ..."
+      placeholder: 'Consider adding a new endpoint / UI element ...'
       required: false
 
   - type: textarea
@@ -31,5 +31,5 @@ body:
     attributes:
       label: Additional context
       description: Any extra context, screenshots, mockups, or links.
-      placeholder: "Wireframes, designs, references ..."
+      placeholder: 'Wireframes, designs, references ...'
       required: false

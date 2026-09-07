@@ -4,34 +4,34 @@
 
 /* CONTAINER */
 .flip-card {
-    perspective: 1200px;
-    width: 100%;
+  perspective: 1200px;
+  width: 100%;
 }
 
 /* INNER CARD */
 .flip-card-inner {
-    position: relative;
-    width: 100%;
-    padding-top: 133%;
-    /* Maintains 3:4 Aspect Ratio */
-    transition: transform 0.8s var(--transition-ease);
-    transform-style: preserve-3d;
-    cursor: pointer;
+  position: relative;
+  width: 100%;
+  padding-top: 133%;
+  /* Maintains 3:4 Aspect Ratio */
+  transition: transform 0.8s var(--transition-ease);
+  transform-style: preserve-3d;
+  cursor: pointer;
 }
 
 .flip-card-inner.flipped {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 /* FRONT / BACK COMMON STYLES */
 .figure-front,
 .figure-back {
-    position: absolute;
-    inset: 0;
-    backface-visibility: hidden;
-    border-radius: var(--radius);
-    overflow: hidden;
-    box-shadow: var(--shadow-soft);
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
 }
 
 /* ----------------------------------
@@ -39,37 +39,37 @@
 ---------------------------------- */
 
 .figure-front {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 /* IMAGE WRAPPER */
 .figure-front .image-wrapper {
-    flex: 1;
-    overflow: hidden;
+  flex: 1;
+  overflow: hidden;
 }
 
 /* IMAGE */
 .figure-front img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform var(--transition-speed) var(--transition-ease);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-speed) var(--transition-ease);
 }
 
 /* HOVER ZOOM */
 .figure-front:hover img,
 .figure-front:focus-within img {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /* CAPTION (Front) */
 .figure-front figcaption {
-    padding: var(--spacing-sm);
-    background: var(--color-bg-alt);
-    text-align: center;
-    font-size: var(--font-size-sm);
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding: var(--spacing-sm);
+  background: var(--color-bg-alt);
+  text-align: center;
+  font-size: var(--font-size-sm);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 /* ----------------------------------
@@ -77,54 +77,54 @@
 ---------------------------------- */
 
 .figure-back {
-    transform: rotateY(180deg);
-    background: var(--color-bg-alt);
-    color: var(--color-text);
-    padding: var(--spacing-md);
+  transform: rotateY(180deg);
+  background: var(--color-bg-alt);
+  color: var(--color-text);
+  padding: var(--spacing-md);
 
-    /* Layout */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* Centers text vertically if short */
-    align-items: center;
-    /* Centers text horizontally */
-    text-align: center;
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Centers text vertically if short */
+  align-items: center;
+  /* Centers text horizontally */
+  text-align: center;
 
-    /* Scroll Behavior */
-    overflow-y: auto;
-    overflow-x: hidden;
-    overflow-wrap: break-word;
-    /* Prevents long words from breaking layout */
+  /* Scroll Behavior */
+  overflow-y: auto;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+  /* Prevents long words from breaking layout */
 
-    /* Custom Scrollbar (Firefox) */
-    scrollbar-width: thin;
-    scrollbar-color: var(--color-primary) transparent;
+  /* Custom Scrollbar (Firefox) */
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary) transparent;
 }
 
 /* CUSTOM SCROLLBAR (Chrome, Safari, Edge) */
 .figure-back::-webkit-scrollbar {
-    width: 4px;
+  width: 4px;
 }
 
 .figure-back::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
 
 .figure-back::-webkit-scrollbar-thumb {
-    background: var(--color-primary);
-    border-radius: 10px;
+  background: var(--color-primary);
+  border-radius: 10px;
 }
 
 /* Ensure headings/paragraphs don't have massive gaps */
 .figure-back h3 {
-    margin-top: 0;
-    margin-bottom: var(--spacing-xs);
-    line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: var(--spacing-xs);
+  line-height: 1.2;
 }
 
 .figure-back p {
-    margin-bottom: 0;
-    /* Prevents extra scroll space at the bottom */
-    font-size: 0.95rem;
+  margin-bottom: 0;
+  /* Prevents extra scroll space at the bottom */
+  font-size: 0.95rem;
 }

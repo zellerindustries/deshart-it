@@ -1,7 +1,7 @@
-name: "🐛 Bug Report"
-description: "Report a problem or unexpected behavior in a project."
-title: "[BUG] "
-labels: ["bug"]
+name: '🐛 Bug Report'
+description: 'Report a problem or unexpected behavior in a project.'
+title: '[BUG] '
+labels: ['bug']
 assignees: []
 
 body:
@@ -23,7 +23,7 @@ body:
     attributes:
       label: Expected behavior
       description: What you expected to happen
-      placeholder: "The feature should ..."
+      placeholder: 'The feature should ...'
       required: true
 
   - type: input
@@ -31,7 +31,7 @@ body:
     attributes:
       label: Environment
       description: OS, browser, version, etc.
-      placeholder: "Windows 11, Chrome 112"
+      placeholder: 'Windows 11, Chrome 112'
       required: false
 
   - type: textarea
@@ -39,5 +39,5 @@ body:
     attributes:
       label: Additional context
       description: Add any other context about the problem here.
-      placeholder: "Stack traces, screenshots, logs, etc."
+      placeholder: 'Stack traces, screenshots, logs, etc.'
       required: false

@@ -1,26 +1,26 @@
 /* 1. Base / Configuration */
-@import url("styles/root.css");
-@import url("styles/reset.css");
-@import url("styles/typography.css");
+@import url('styles/root.css');
+@import url('styles/reset.css');
+@import url('styles/typography.css');
 
 /* 2. Vendor / Third-Party */
-@import url("styles/bootstrap-icons.css");
+@import url('styles/bootstrap-icons.css');
 
 /* 3. Layout & Structure */
-@import url("styles/layout.css");
-@import url("styles/classes.css");
-@import url("styles/ids.css");
+@import url('styles/layout.css');
+@import url('styles/classes.css');
+@import url('styles/ids.css');
 
 /* 4. Components / Modules */
-@import url("styles/accessibility.css");
-@import url("styles/buttons.css");
-@import url("styles/flipcards.css");
-@import url("styles/footer.css");
-@import url("styles/forms.css");
-@import url("styles/header.css");
-@import url("styles/tiles.css");
+@import url('styles/accessibility.css');
+@import url('styles/buttons.css');
+@import url('styles/flipcards.css');
+@import url('styles/footer.css');
+@import url('styles/forms.css');
+@import url('styles/header.css');
+@import url('styles/tiles.css');
 
 /* 5. Overrides & Responsiveness */
-@import url("styles/responsive.css");
+@import url('styles/responsive.css');
 
-@import url("styles/404.css");
+@import url('styles/404.css');

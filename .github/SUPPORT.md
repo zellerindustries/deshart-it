@@ -19,12 +19,12 @@ If you believe you have found a bug:
 
 Please include:
 
-* A clear description of the problem
-* Steps to reproduce the issue
-* Expected behavior
-* Actual behavior
-* Relevant error messages or logs
-* Environment and version information
+- A clear description of the problem
+- Steps to reproduce the issue
+- Expected behavior
+- Actual behavior
+- Relevant error messages or logs
+- Environment and version information
 
 ## Feature Requests
 
@@ -54,9 +54,9 @@ For commercial support, custom development, integrations, or consulting inquirie
 
 To help us resolve issues efficiently, please:
 
-* Search existing issues and discussions first.
-* Use the latest version of the project when possible.
-* Provide enough information to reproduce the problem.
-* Remove sensitive information, credentials, API keys, and personal data from logs and screenshots.
+- Search existing issues and discussions first.
+- Use the latest version of the project when possible.
+- Provide enough information to reproduce the problem.
+- Remove sensitive information, credentials, API keys, and personal data from logs and screenshots.
 
 Thank you for helping us improve Zeller Industries projects.

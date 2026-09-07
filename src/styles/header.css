@@ -3,83 +3,85 @@
 ========================================== */
 /* ==== HEADER ==== */
 #site-header {
-    box-shadow: var(--shadow-strong);
-    position: sticky;
-    top: 0;
-    z-index: 110;
-    background-color: var(--color-bg);
-    transition: background-color var(--transition-speed) ease;
+  box-shadow: var(--shadow-strong);
+  position: sticky;
+  top: 0;
+  z-index: 110;
+  background-color: var(--color-bg);
+  transition: background-color var(--transition-speed) ease;
 }
 
 #site-header.scrolled {
-    background-color: var(--color-bg-alt);
+  background-color: var(--color-bg-alt);
 }
 
 #site-header .logo-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--spacing-sm);
-    padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
 }
 
 #site-header nav {
-    margin: 0 var(--spacing-inline);
-    display: flex;
-    justify-content: end;
-    align-items: center;
+  margin: 0 var(--spacing-inline);
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 #site-header nav ul {
-    display: flex;
-    gap: var(--spacing-sm);
-    transition: opacity var(--transition-speed) ease, transform var(--transition-speed) ease;
+  display: flex;
+  gap: var(--spacing-sm);
+  transition:
+    opacity var(--transition-speed) ease,
+    transform var(--transition-speed) ease;
 }
 
 #site-header nav ul li a {
-    font-family: var(--font-primary);
-    font-weight: var(--font-weight-medium);
-    font-size: var(--font-size-md);
-    color: var(--color-text);
-    padding: var(--spacing-md);
-    position: relative;
-    transition: color var(--transition-speed);
-    display: flex;
-    gap: var(--spacing-md);
-    align-items: center;
-    justify-content: center;
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-md);
+  color: var(--color-text);
+  padding: var(--spacing-md);
+  position: relative;
+  transition: color var(--transition-speed);
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: center;
+  justify-content: center;
 }
 
 #site-header nav ul li a::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    height: 2px;
-    width: 0;
-    background: var(--color-accent);
-    transition: width var(--transition-speed) ease;
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: var(--color-accent);
+  transition: width var(--transition-speed) ease;
 }
 
 #site-header nav ul li a:hover::after,
 #site-header nav ul li a:focus::after {
-    width: 100%;
+  width: 100%;
 }
 
 /* ==== MENU TOGGLE BUTTON ==== */
 .menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: var(--font-size-xl);
-    color: var(--color-text);
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    transition: color var(--transition-speed);
-    padding: var(--spacing-md);
+  display: none;
+  background: none;
+  border: none;
+  font-size: var(--font-size-xl);
+  color: var(--color-text);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--transition-speed);
+  padding: var(--spacing-md);
 }
 
 #site-header.scrolled .menu-toggle {
-    color: var(--color-accent);
+  color: var(--color-accent);
 }

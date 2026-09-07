@@ -2,81 +2,80 @@
    LAYOUT & HERO
 ========================================== */
 .grid {
-    display: grid;
-    gap: var(--spacing-md);
+  display: grid;
+  gap: var(--spacing-md);
 }
 
 /* Fix: Default to 1 col, use utility classes for more */
 .grid-2-cols-mobile {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-md);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
 }
 
 /* FLEX UTILITIES */
 .flex {
-    display: flex;
-    gap: var(--spacing-md);
+  display: flex;
+  gap: var(--spacing-md);
 }
 
 .flex.column {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 /* HERO SECTION */
 .hero {
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* Added to prevent overflow on mobile */
-    padding: 8rem 1rem;
-    align-items: center;
-    justify-content: center;
-    gap: var(--spacing-lg);
-    background: linear-gradient(135deg, #4b100b, #65140e, #2a2a5c, #323366);
-    position: relative;
-    overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* Added to prevent overflow on mobile */
+  padding: 8rem 1rem;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  background: linear-gradient(135deg, #4b100b, #65140e, #2a2a5c, #323366);
+  position: relative;
+  overflow: hidden;
 }
 
-
 .hero .hero-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero img {
-    width: clamp(120px, 20vw, 240px);
-    max-width: 200px;
-    height: auto;
-    flex-shrink: 0;
+  width: clamp(120px, 20vw, 240px);
+  max-width: 200px;
+  height: auto;
+  flex-shrink: 0;
 }
 
 /* HERO TEXT */
 .hero p {
-    color: var(--color-text-muted);
-    font-size: var(--font-size-md);
-    margin: var(--spacing-md) 0 var(--spacing-lg);
-    /* Removed 'auto' for flex alignment */
-    max-width: 600px;
-    line-height: var(--line-height-base);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-md);
+  margin: var(--spacing-md) 0 var(--spacing-lg);
+  /* Removed 'auto' for flex alignment */
+  max-width: 600px;
+  line-height: var(--line-height-base);
 }
 
 .hero h1,
 .hero h2 {
-    color: var(--color-text);
-    line-height: var(--line-height-heading);
-    margin-bottom: var(--spacing-md);
+  color: var(--color-text);
+  line-height: var(--line-height-heading);
+  margin-bottom: var(--spacing-md);
 }
 
 .max-width {
-    max-width: var(--max-width);
-    margin: 0 auto;
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 section:not(.hero) {
-    margin: var(--spacing-section) auto;
-    /* Changed to use your section variable */
-    padding: 0 var(--spacing-inline);
+  margin: var(--spacing-section) auto;
+  /* Changed to use your section variable */
+  padding: 0 var(--spacing-inline);
 }

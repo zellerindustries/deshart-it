@@ -1,5 +1,5 @@
 .full-logo {
-    padding: var(--spacing-md);
-    background: linear-gradient(135deg, #4b100b, #65140e, #2a2a5c, #323366);
-    border-radius: 1000px;
+  padding: var(--spacing-md);
+  background: linear-gradient(135deg, #4b100b, #65140e, #2a2a5c, #323366);
+  border-radius: 1000px;
 }

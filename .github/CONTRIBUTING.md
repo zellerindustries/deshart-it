@@ -5,7 +5,7 @@ Thank you for your interest in contributing! We welcome contributions from every
 ## How to Contribute
 
 1. **Fork the repository** you want to contribute to.
-2. **Create a branch** for your work: ```bash   git checkout -b feature/my-new-feature```
+2. **Create a branch** for your work: `bash   git checkout -b feature/my-new-feature`
 3. Make your changes with clear commit messages.
 4. Open a Pull Request against the main branch of the original repository.
 

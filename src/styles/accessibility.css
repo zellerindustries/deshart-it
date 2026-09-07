@@ -4,15 +4,15 @@
 
 /* FOCUS STATES FOR KEYBOARD NAVIGATION */
 :focus-visible {
-    outline: 3px solid var(--color-accent-hover);
-    outline-offset: 4px;
-    transition: outline-color var(--transition-speed) var(--transition-ease);
+  outline: 3px solid var(--color-accent-hover);
+  outline-offset: 4px;
+  transition: outline-color var(--transition-speed) var(--transition-ease);
 }
 
 /* TEXT SELECTION STYLING */
 ::selection {
-    background-color: var(--color-selection-bg);
-    color: var(--color-selection-text);
+  background-color: var(--color-selection-bg);
+  color: var(--color-selection-text);
 }
 
 /* ==========================
@@ -20,36 +20,36 @@
    ========================== */
 
 /* Target anchors that are visually 'disabled' or the current active page */
-a[aria-disabled="true"],
-a[aria-current="page"] {
-    /* 1. Visual Feedback: Desaturate and fade */
-    color: var(--color-text-muted) !important;
-    opacity: 0.6 !important;
+a[aria-disabled='true'],
+a[aria-current='page'] {
+  /* 1. Visual Feedback: Desaturate and fade */
+  color: var(--color-text-muted) !important;
+  opacity: 0.6 !important;
 
-    /* 2. Interaction: Stop the click */
-    pointer-events: none !important;
-    cursor: not-allowed !important;
+  /* 2. Interaction: Stop the click */
+  pointer-events: none !important;
+  cursor: not-allowed !important;
 
-    /* 3. Style: Remove underlines or accent borders if they exist */
-    text-decoration: none !important;
-    border-color: transparent !important;
+  /* 3. Style: Remove underlines or accent borders if they exist */
+  text-decoration: none !important;
+  border-color: transparent !important;
 
-    /* 4. Ensure no hover effects trigger */
-    background-color: transparent !important;
+  /* 4. Ensure no hover effects trigger */
+  background-color: transparent !important;
 }
 
 /* Specific nuance for 'aria-current' if you want it to look
    like the active page but not necessarily 'grayed out' */
-a[aria-current="page"] {
-    color: var(--color-accent);
-    /* Use your red accent */
-    opacity: 1;
-    font-weight: var(--font-weight-bold);
-    pointer-events: none;
-    /* Keep it non-clickable since you're already there */
+a[aria-current='page'] {
+  color: var(--color-accent);
+  /* Use your red accent */
+  opacity: 1;
+  font-weight: var(--font-weight-bold);
+  pointer-events: none;
+  /* Keep it non-clickable since you're already there */
 }
 
 /* Keyboard accessibility: ensure tab-focus is hidden for disabled links */
-a[aria-disabled="true"]:focus {
-    outline: none;
+a[aria-disabled='true']:focus {
+  outline: none;
 }

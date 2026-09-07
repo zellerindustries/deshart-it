@@ -1,36 +1,36 @@
 {
-    "input": {
-        "dir": "./src",
-        "mapping": {
-            "pages": "",
-            "scripts": "",
-            "styles": "",
-            "public": ""
-        },
-        "externals": {
-            "./node_modules/bootstrap-icons/font/fonts": "fonts"
-        }
+  "input": {
+    "dir": "./src",
+    "mapping": {
+      "pages": "",
+      "scripts": "",
+      "styles": "",
+      "public": ""
     },
-    "output": {
-        "dir": "./dist",
-        "replace": {
-            "../../node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2": "/fonts/bootstrap-icons.woff2",
-            "../../node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff": "/fonts/bootstrap-icons.woff",
-            "<!--security-->": "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self';script-src 'self' 'unsafe-hashes';style-src 'self';img-src 'self' data:;font-src 'self';connect-src 'self' https://jeovlal67gzoep6nlct2nn6sym0hyxwy.lambda-url.eu-south-1.on.aws/;form-action 'self';base-uri 'self';object-src 'none';upgrade-insecure-requests;block-all-mixed-content;\">"
-        },
-        "css": {
-            "bundling": true,
-            "minify": true
-        },
-        "html": {
-            "minify": true
-        },
-        "js": {
-            "bundling": true,
-            "minify": true
-        },
-        "ts": {
-            "minify": true
-        }
+    "externals": {
+      "./node_modules/bootstrap-icons/font/fonts": "fonts"
     }
+  },
+  "output": {
+    "dir": "./dist",
+    "replace": {
+      "../../node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2": "/fonts/bootstrap-icons.woff2",
+      "../../node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff": "/fonts/bootstrap-icons.woff",
+      "<!--security-->": "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self';script-src 'self' 'unsafe-hashes';style-src 'self';img-src 'self' data:;font-src 'self';connect-src 'self' https://jeovlal67gzoep6nlct2nn6sym0hyxwy.lambda-url.eu-south-1.on.aws/;form-action 'self';base-uri 'self';object-src 'none';upgrade-insecure-requests;block-all-mixed-content;\">"
+    },
+    "css": {
+      "bundling": true,
+      "minify": true
+    },
+    "html": {
+      "minify": true
+    },
+    "js": {
+      "bundling": true,
+      "minify": true
+    },
+    "ts": {
+      "minify": true
+    }
+  }
 }

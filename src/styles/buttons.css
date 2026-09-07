@@ -3,39 +3,40 @@
 ========================================== */
 
 .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--spacing-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
 
-    padding: var(--spacing-md);
-    border-radius: var(--radius);
+  padding: var(--spacing-md);
+  border-radius: var(--radius);
 
-    font-weight: var(--font-weight-bold);
-    line-height: 1;
-    white-space: nowrap;
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
+  white-space: nowrap;
 
-    cursor: pointer;
-    text-decoration: none;
+  cursor: pointer;
+  text-decoration: none;
 
-    border: 2px solid transparent;
-    background: transparent;
-    color: var(--color-accent);
+  border: 2px solid transparent;
+  background: transparent;
+  color: var(--color-accent);
 
-    transition: background var(--transition-speed) var(--transition-ease),
-        color var(--transition-speed) var(--transition-ease),
-        border-color var(--transition-speed) var(--transition-ease),
-        box-shadow var(--transition-speed) var(--transition-ease),
-        transform 0.15s ease;
+  transition:
+    background var(--transition-speed) var(--transition-ease),
+    color var(--transition-speed) var(--transition-ease),
+    border-color var(--transition-speed) var(--transition-ease),
+    box-shadow var(--transition-speed) var(--transition-ease),
+    transform 0.15s ease;
 }
 
 .btn:focus-visible {
-    outline: 2px solid var(--color-accent);
-    outline-offset: 3px;
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
 }
 
 .btn:active {
-    transform: scale(0.97);
+  transform: scale(0.97);
 }
 
 /* ==========================================
@@ -43,16 +44,16 @@
 ========================================== */
 
 .btn-border {
-    border-color: var(--color-accent);
-    background: var(--color-bg-alt);
-    color: var(--color-accent);
+  border-color: var(--color-accent);
+  background: var(--color-bg-alt);
+  color: var(--color-accent);
 }
 
 .btn-border:hover,
 .btn-border:focus-visible {
-    background: var(--color-accent);
-    color: var(--color-bg);
-    box-shadow: var(--shadow-strong);
+  background: var(--color-accent);
+  color: var(--color-bg);
+  box-shadow: var(--shadow-strong);
 }
 
 /* ==========================================
@@ -60,30 +61,30 @@
 ========================================== */
 
 .btn-primary {
-    background: var(--color-accent);
-    border-color: var(--color-accent);
-    color: var(--color-bg-alt);
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-bg-alt);
 }
 
 .btn-primary:hover,
 .btn-primary:focus-visible {
-    background: var(--color-bg-alt);
-    color: var(--color-accent-hover);
-    border-color: var(--color-accent-hover);
-    box-shadow: var(--shadow-strong);
+  background: var(--color-bg-alt);
+  color: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  box-shadow: var(--shadow-strong);
 }
 
 .btn-cta {
-    text-transform: uppercase;
-    letter-spacing: 3px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .btn .icon {
-    font-size: var(--font-size-xl);
+  font-size: var(--font-size-xl);
 }
 
 .btn span {
-    font-size: var(--font-size-md);
-    padding: var(--spacing-md);
-    flex-grow: 1;
+  font-size: var(--font-size-md);
+  padding: var(--spacing-md);
+  flex-grow: 1;
 }
