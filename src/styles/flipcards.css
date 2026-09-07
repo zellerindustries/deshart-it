@@ -99,7 +99,7 @@
 
   /* Custom Scrollbar (Firefox) */
   scrollbar-width: thin;
-  scrollbar-color: var(--color-primary) transparent;
+  scrollbar-color: var(--color-accent) transparent;
 }
 
 /* CUSTOM SCROLLBAR (Chrome, Safari, Edge) */
@@ -112,7 +112,7 @@
 }
 
 .figure-back::-webkit-scrollbar-thumb {
-  background: var(--color-primary);
+  background: var(--color-accent);
   border-radius: 10px;
 }
 

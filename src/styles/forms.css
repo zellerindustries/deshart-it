@@ -252,22 +252,3 @@ button[type='submit'].loading {
 #form-success.active {
   display: block;
 }
-
-.cta-button {
-  display: inline-block;
-  margin-top: var(--spacing-lg);
-  padding: var(--spacing-md) var(--spacing-lg);
-
-  background: var(--color-accent);
-  color: var(--color-selection-text);
-
-  border-radius: var(--radius-button);
-  text-decoration: none;
-  font-weight: var(--font-weight-bold);
-
-  transition: var(--transition-hover);
-}
-
-.cta-button:hover {
-  background: var(--color-accent-hover);
-}

@@ -4,6 +4,10 @@ dev/
 node_modules/
 
 .vscode
+node_modules
+.dev/*
+.dev
+.claude
 
 .claude
 

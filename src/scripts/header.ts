@@ -6,7 +6,6 @@ export function initHeader(): void {
   const header = document.getElementById('site-header');
   const nav = document.querySelector<HTMLElement>('nav');
   const menuToggle = document.getElementById('menu-toggle');
-  const primaryMenu = document.getElementById('primary-menu');
   const navMenu = document.getElementById('primary-menu');
   const scrollThreshold = 50;
 
@@ -23,13 +22,13 @@ export function initHeader(): void {
    * Toggle Hamburger Menu
    */
   const toggleMenu = (force?: boolean): void => {
-    if (!menuToggle || !primaryMenu || !navMenu) return;
+    if (!menuToggle || !navMenu) return;
 
     const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
     const shouldOpen = typeof force === 'boolean' ? force : !expanded;
 
     menuToggle.setAttribute('aria-expanded', String(shouldOpen));
-    primaryMenu.toggleAttribute('hidden', !shouldOpen);
+    navMenu.toggleAttribute('hidden', !shouldOpen);
     navMenu.classList.toggle('active', shouldOpen);
     menuToggle.classList.toggle('open', shouldOpen);
 
