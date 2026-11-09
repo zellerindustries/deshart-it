@@ -1,0 +1,21 @@
+#linkinbio-header {
+  padding: var(--spacing-md) var(--spacing-md) 0 var(--spacing-md);
+  background-color: var(--color-bg-alt);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-lg);
+  text-align: center;
+}
+
+#linkinbio-header img {
+  width: 8rem;
+  height: auto;
+}
+
+.full-logo {
+  padding: var(--spacing-md);
+  background: linear-gradient(135deg, #4b100b, #65140e, #2a2a5c, #323366);
+  border-radius: 1000px;
+}

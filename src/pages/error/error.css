@@ -84,7 +84,7 @@ body {
   font-weight: var(--font-weight-medium, 500);
   font-size: var(--font-size-sm, 1rem);
   padding: var(--spacing-sm, 0.75rem) var(--spacing-lg, 1.5rem);
-  border-radius: var(--radius-button, 4px);
+  border-radius: var(--radius-md, 4px);
   text-decoration: none;
   transition: background-color var(--transition-hover, 0.25s ease-out);
 }

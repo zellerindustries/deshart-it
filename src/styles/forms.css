@@ -22,7 +22,7 @@ fieldset {
 
 legend {
   font-family: var(--font-secondary);
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-base);
   font-weight: var(--font-weight-bold);
   color: var(--color-text);
   margin-bottom: var(--spacing-sm);
@@ -47,7 +47,7 @@ input,
 textarea {
   width: 100%;
   padding: var(--spacing-md);
-  border-radius: var(--radius);
+  border-radius: var(--radius-md);
   border: var(--border);
   background: var(--color-bg-alt);
   color: var(--color-text);
@@ -66,7 +66,7 @@ textarea {
 
 input:hover,
 textarea:hover {
-  background: var(--color-bg-surface);
+  background: var(--color-surface);
   border-color: var(--color-border-strong);
 }
 
@@ -75,11 +75,11 @@ textarea:hover {
 input:focus-visible,
 textarea:focus-visible {
   outline: none;
-  background: var(--color-bg-surface);
+  background: var(--color-surface);
   border-color: var(--color-accent);
   box-shadow:
     0 0 0 3px rgba(215, 38, 61, 0.2),
-    var(--shadow-soft);
+    var(--shadow-sm);
 }
 
 /* Invalid state */
@@ -93,7 +93,7 @@ input:invalid:focus-visible,
 textarea:invalid:focus-visible {
   box-shadow:
     0 0 0 3px rgba(215, 38, 61, 0.25),
-    var(--shadow-soft);
+    var(--shadow-sm);
 }
 
 /* Disabled */
@@ -128,8 +128,8 @@ button[type='submit'] {
   color: var(--color-selection-text);
 
   border: none;
-  border-radius: var(--radius-button);
-  box-shadow: var(--shadow-soft);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
 
   transition:
     background var(--transition-hover),
@@ -142,14 +142,14 @@ button[type='submit'] {
 button[type='submit']:hover {
   background: var(--color-accent-hover);
   transform: translateY(-2px);
-  box-shadow: var(--shadow-strong);
+  box-shadow: var(--shadow-md);
 }
 
 /* Active */
 
 button[type='submit']:active {
   transform: translateY(0);
-  box-shadow: var(--shadow-soft);
+  box-shadow: var(--shadow-sm);
 }
 
 /* Focus */
@@ -158,13 +158,13 @@ button[type='submit']:focus-visible {
   outline: none;
   box-shadow:
     0 0 0 3px rgba(215, 38, 61, 0.25),
-    var(--shadow-strong);
+    var(--shadow-md);
 }
 
 /* Disabled */
 
 button[type='submit']:disabled {
-  background: var(--color-bg-surface);
+  background: var(--color-surface);
   color: var(--color-text-muted);
   cursor: not-allowed;
   transform: none;

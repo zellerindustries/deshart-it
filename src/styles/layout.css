@@ -42,7 +42,7 @@
 /* HERO TEXT */
 .hero p {
   color: var(--color-text-muted);
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-base);
   margin: var(--spacing-md) 0 var(--spacing-lg);
   /* Removed 'auto' for flex alignment */
   max-width: 600px;

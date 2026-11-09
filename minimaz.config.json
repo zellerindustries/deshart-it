@@ -3,7 +3,7 @@
     "dir": "./src",
     "mapping": {
       "pages": "",
-      "scripts": "",
+      "scripts": "scripts",
       "styles": "",
       "public": ""
     },
@@ -27,9 +27,6 @@
     },
     "js": {
       "bundling": true,
-      "minify": true
-    },
-    "ts": {
       "minify": true
     }
   }

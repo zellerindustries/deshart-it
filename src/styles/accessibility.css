@@ -9,12 +9,6 @@
   transition: outline-color var(--transition-speed) var(--transition-ease);
 }
 
-/* TEXT SELECTION STYLING */
-::selection {
-  background-color: var(--color-selection-bg);
-  color: var(--color-selection-text);
-}
-
 /* ==========================
    DISABLED / CURRENT STATE
    ========================== */

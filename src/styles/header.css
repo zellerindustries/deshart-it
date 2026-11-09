@@ -3,7 +3,7 @@
 ========================================== */
 /* ==== HEADER ==== */
 #site-header {
-  box-shadow: var(--shadow-strong);
+  box-shadow: var(--shadow-md);
   position: sticky;
   top: 0;
   z-index: 110;
@@ -33,7 +33,7 @@
 #site-header nav ul li a {
   font-family: var(--font-primary);
   font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-base);
   color: var(--color-text);
   padding: var(--spacing-md);
   position: relative;

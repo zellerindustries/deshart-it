@@ -1,0 +1,17 @@
+/* Self-hosted font declarations (served from /fonts). */
+@font-face {
+  font-family: 'Figtree';
+  src: url('/fonts/figtree.woff2') format('woff2');
+  font-weight: 400 700;
+  /* variable range if supported, or just allow all weights */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Besley';
+  src: url('/fonts/besley.woff2') format('woff2');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}

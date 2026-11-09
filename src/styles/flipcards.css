@@ -29,9 +29,9 @@
   position: absolute;
   inset: 0;
   backface-visibility: hidden;
-  border-radius: var(--radius);
+  border-radius: var(--radius-md);
   overflow: hidden;
-  box-shadow: var(--shadow-soft);
+  box-shadow: var(--shadow-sm);
 }
 
 /* ----------------------------------
@@ -127,4 +127,11 @@
   margin-bottom: 0;
   /* Prevents extra scroll space at the bottom */
   font-size: 0.95rem;
+}
+
+#portfolio ul {
+  display: grid;
+  gap: var(--spacing-md);
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }

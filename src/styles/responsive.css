@@ -2,6 +2,13 @@
    RESPONSIVE (Global & FAQ)
 ========================================== */
 
+/* Mobile */
+@media (max-width: 768px) {
+  #faq dl {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ==== TABLET / MOBILE (768px) ==== */
 @media (max-width: 768px) {
   /* Navigation */
@@ -25,7 +32,7 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    box-shadow: var(--shadow-strong);
+    box-shadow: var(--shadow-md);
     border-top: 2px solid var(--color-accent);
     transition:
       opacity var(--transition-speed) var(--transition-ease),
@@ -67,7 +74,7 @@
 }
 
 /* ==== SMALL SCREENS (600px) ==== */
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   /* Hero */
   .hero {
     padding: 4rem 1rem;
@@ -100,7 +107,7 @@
 }
 
 /* ==== EXTRA SMALL (400px / breakpoint-sm) ==== */
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   #faq dd {
     font-size: var(--font-size-xs);
   }

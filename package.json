@@ -4,15 +4,15 @@
   "license": "ISC",
   "type": "commonjs",
   "scripts": {
-    "build": "npx mz b",
-    "start": "npx mz b && npx serve dist/",
+    "build": "mz b --overwrite",
+    "start": "mz b --overwrite && npx serve dist/",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "prepare": "husky || true"
   },
   "dependencies": {
-    "bootstrap-icons": "^1.13.1",
-    "minimaz-cli": "^0.5.2"
+    "@minimaz/sitekit": "^0.2.0",
+    "bootstrap-icons": "^1.13.1"
   },
   "devDependencies": {
     "husky": "^9.1.7",
@@ -20,6 +20,6 @@
     "serve": "^14.2.6"
   },
   "allowScripts": {
-    "esbuild@0.28.2": true
+    "@minimaz/sitekit@0.2.0": true
   }
 }
