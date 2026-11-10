@@ -1,0 +1,38 @@
+{
+  "version": "0.2",
+  "language": "it,en",
+  "import": ["@cspell/dict-it-it/cspell-ext.json"],
+  "dictionaries": ["it-it", "en_US"],
+  "ignorePaths": ["dist/**", "node_modules/**", "src/scripts/**"],
+  "words": [
+    "Zeller",
+    "zellerindustries",
+    "googlebot",
+    "minimaz",
+    "webp",
+    "favicon",
+    "sitemap",
+    "noopener",
+    "noreferrer",
+    "hreflang",
+    "noarchive",
+    "performanti",
+    "profilazione",
+    "artt",
+    "YAMAS",
+    "Yamas",
+    "Desh",
+    "Battafarano",
+    "pfpic",
+    "Kallis",
+    "mezzorco",
+    "Nightstar"
+  ],
+  "ignoreRegExpList": [
+    "href\\s*=\\s*\"[^\"]*\"",
+    "src\\s*=\\s*\"[^\"]*\"",
+    "class\\s*=\\s*\"[^\"]*\"",
+    "id\\s*=\\s*\"[^\"]*\"",
+    "srcset\\s*=\\s*\"[^\"]*\""
+  ]
+}

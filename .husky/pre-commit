@@ -1,1 +1,4 @@
 npm run format:check
+npm run lint:html
+npm run lint:css
+npm run lint:spelling

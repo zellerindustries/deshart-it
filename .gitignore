@@ -4,13 +4,12 @@ dev/
 node_modules/
 
 .vscode
-node_modules
-.dev/*
-.dev
-.claude
 
-.claude
+.claude/superpowers/
+.claude/worktrees/
 
 .DS_Store
 Thumbs.db
 desktop.ini
+
+.dev
