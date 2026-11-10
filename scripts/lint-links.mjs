@@ -1,8 +1,8 @@
 import { spawn } from 'node:child_process';
 import path from 'node:path';
-import { startDistServer } from './serve-dist.mjs';
+import { getServePort, startDistServer } from './serve-dist.mjs';
 
-const port = 47_283;
+const port = getServePort();
 const root = path.resolve(import.meta.dirname, '..');
 const linkinatorCli = path.join(root, 'node_modules', 'linkinator', 'build', 'src', 'cli.js');
 

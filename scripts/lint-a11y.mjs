@@ -1,9 +1,9 @@
 import { execFileSync } from 'node:child_process';
 import { globSync } from 'node:fs';
 import path from 'node:path';
-import { startDistServer } from './serve-dist.mjs';
+import { getServePort, startDistServer } from './serve-dist.mjs';
 
-const port = 47_284;
+const port = getServePort();
 const root = path.resolve(import.meta.dirname, '..');
 const distDir = path.join(root, 'dist');
 const files = globSync('**/*.html', { cwd: distDir });
